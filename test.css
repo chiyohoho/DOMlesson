@@ -1,0 +1,175 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #8e89ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 0px 0px 0px;
+}
+
+.container .ctn_position {
+    max-width: 1200px;
+    height: fit-content;
+
+    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+}
+
+.container .ctn_position .ctn_left {
+    width: 40%;
+    background: #2a265f;
+    padding: 40px;
+
+    border-radius: 15px 0px 0px 15px;
+}
+
+.container .ctn_position .ctn_left h5 {
+    text-transform: uppercase;
+    color: #9493af;
+    font-size: 10px;
+    font-weight: 200;
+
+    margin-bottom: 20px;
+}
+
+.container .ctn_position .ctn_left h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+
+.container .ctn_position .ctn_left p {
+    color: #9493af;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+.container .ctn_position .ctn_right {
+    width: 60%;
+    background: white;
+    padding: 40px;
+
+    border-radius: 0px 15px 15px 0px;
+}
+
+.container .ctn_position .ctn_right ul {
+    display: grid;
+    grid-template-areas: 
+    "li1 li1 li2"
+    "li3 li3 li3";
+}
+
+.container .ctn_position .ctn_right ul .li1 {
+    grid-area: li1;
+
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+}
+
+.container .ctn_position .ctn_right ul .li2 {
+    grid-area: li2;
+    text-align: right;
+}
+
+.container .ctn_position .ctn_right ul .li2 .line {
+    position: relative;
+
+    width: 100%;
+    height: 5px;
+    border-radius: 25px;
+    background: gray;
+
+    margin-bottom: 10px;
+}
+
+.container .ctn_position .ctn_right ul .li2 .line::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+
+    background: #2a265f;
+    top: 0;
+    left: 0;
+
+    border-radius: 25px;
+    transition: all 2s linear;
+}
+
+.container .ctn_position .ctn_right ul .li2 .line:hover::before {
+    width: 100%;
+    transition: all 2s linear;
+}
+
+.container .ctn_position .ctn_right ul .li2 .line h6 {
+    font-size: 8px;
+    font-weight:400;
+    color: gray;
+}
+
+.container .ctn_position .ctn_right ul .li3 {
+    grid-area: li3;
+
+    margin-bottom: 20px;
+}
+
+.container .ctn_position .ctn_right ul .li3 h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container .ctn_position .ctn_right button {
+    padding: 10px 40px;
+    background: #2a265f;
+
+    border-radius: 25px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+
+    margin:0px 0px 0px 250px;
+
+}
+
+.container .ctn_button {
+    padding-right: 100px;
+
+    margin: 50px 0px 0px auto;
+}
+.container .ctn_button button {
+    padding: 10px 40px;
+    background: #2a265f;
+
+    border-radius: 25px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+
+.container .ctn_bottom {
+    background: #001f62;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.container .ctn_bottom h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+}
